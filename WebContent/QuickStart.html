@@ -10,14 +10,21 @@ alert("hello from Head");
 function showMessage(){
 	alert("show message");
 }
+
+
 </script>
 </head>
 <body>
-<script type="text/javascript">
+<input type="button" id="btn1" value="greet" >
+
+
+<script type="text/javascript">var element=document.getElementById("btn1");
+element.addEventListener('click', showMessage());
 alert("hello from body section");
 showMessage();
 greet();
 </script>
+
 </body>
 </html>
 
